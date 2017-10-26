@@ -14,7 +14,7 @@
         @endif
         @if($error_message)
             <div class="alert alert-danger">
-                <?= $error_message ?>
+                {{ $error_message }}
             </div>
         @endif
         <table class="striped">
@@ -32,18 +32,18 @@
             @foreach($menu as $pizza)
                 <tr>
                     <td>
-                        <?= $pizza['name'] ?>
+                        {{ $pizza['name'] }}
                     </td>
                     <td>
                         @foreach($pizza['compose'] as $value)
-                                <?= $value->name ?>,
+                                {{ $value->name }},
                         @endforeach
                     </td>
                     <td>
-                        <?= $pizza['price_little']/100 ?> €
+                        {{ $pizza['price_little']/100 }} €
                     </td>
                     <td>
-                        <?= $pizza['price_big']/100 ?> €
+                        {{ $pizza['price_big']/100 }} €
                     </td>
                     <td>
                         <a href="">X</a>
