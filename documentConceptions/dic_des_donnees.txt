@@ -1,0 +1,107 @@
+Dictionnaire de données 
+
+Nom : customer_id
+Type : Auto_increment
+Taille : 25,0
+Commentaire : 
+
+Nom : first_name
+Type : Varchar
+Taille : 100,0
+Commentaire : 
+
+Nom : last_name
+Type : Varchar
+Taille : 100,0
+Commentaire : 
+
+Nom : phone
+Type : Int
+Taille : 25,0
+Commentaire : 
+
+Nom : order_id
+Type : Auto_increment
+Taille : 25,0
+Commentaire : 
+
+Nom : customer_id
+Type : Int
+Taille : 25,0
+Commentaire : 
+
+Nom : delivery_at
+Type : TimeStamp
+Taille : 25,0
+Commentaire : 
+
+Nom : total_price
+Type : Float
+Taille : 25,0
+Commentaire : 
+
+Nom : pizza_id
+Type : Int
+Taille : 25,0
+Commentaire : 
+
+Nom : size
+Type : Bool
+Taille : 25,0
+Commentaire : 
+
+Nom : pizza_id
+Type : Auto_increment
+Taille : 25,0
+Commentaire : 
+
+Nom : product_id
+Type : Int
+Taille : 25,0
+Commentaire : 
+
+Nom : name
+Type : Varchar
+Taille : 100,0
+Commentaire : 
+
+Nom : price_little
+Type : Float
+Taille : 25,0
+Commentaire : 
+
+Nom : price_big
+Type : Float
+Taille : 25,0
+Commentaire : 
+
+Nom : status
+Type : Bool
+Taille : 25,0
+Commentaire : 
+
+Nom : product_id
+Type : Auto_increment
+Taille : 25,0
+Commentaire : 
+
+Nom : product_name
+Type : Varchar
+Taille : 100,0
+Commentaire : 
+
+Nom : product_price
+Type : Float
+Taille : 25,0
+Commentaire : 
+
+Nom : updated_at
+Type : TimeStamp
+Taille : 25,0
+Commentaire : 
+
+Nom : created_at
+Type : TimeStamp
+Taille : 25,0
+Commentaire : 
+

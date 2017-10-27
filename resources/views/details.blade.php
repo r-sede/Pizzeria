@@ -4,7 +4,7 @@
 <div class="container">
     <div class="col s8 offest-s2 ">
         <div class="margin">
-            Bonjour {{ $customer['first_name'] }} {{ $customer['last_name'] }}  voici le detail de votre commande :  
+            Bonjour <?= $customer['first_name'] ?> <?= $customer['last_name'] ?>  voici le detail de votre commande :  
         </div>
         <table class="striped"> 
             <thead>
@@ -18,13 +18,13 @@
             @foreach($summary as $pizza)
                 <tr>
                     <td>
-                        {{ $pizza['name'] }} €
+                        <?= $pizza['name'] ?> €
                     </td>
                     <td>
-                        {{ $pizza['size'] }} cm
+                        <?= $pizza['size'] ?> cm
                     </td>
                     <td>
-                        {{ $pizza['price']/100 }} €
+                        <?= $pizza['price']/100 ?> €
                     </td>
                 </tr>
             @endforeach
@@ -32,14 +32,14 @@
                    <td></td>
                    <td>Total :</td>
                    <td>
-                        {{ $order['total_price']/100 }} €
+                        <?= $order['total_price']/100 ?> €
                    </td> 
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="margin">
-       Vous pouvez la récuperer à {{ date('H', strtotime($order['delivery_at'])) }} h {{ date('i', strtotime($order['delivery_at']))}}.
+       Vous pouvez la récuperer à <?= date('H', strtotime($order['delivery_at'])) ?>h<?= date('i', strtotime($order['delivery_at']))?>.
     </div>
 </div>
     <footer class="footer">

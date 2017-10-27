@@ -17,8 +17,8 @@ class CreateOrdersTable extends Migration
             $table->increments('order_id');
             $table->integer('customer_id')->unsigned();
             $table->foreign('customer_id')->references('customer_id')->on('customers');
-            $table->date('delivery_at');
-            $table->float('total_price');
+            $table->timestamp('delivery_at');
+            $table->float('total_price')->nullable();
             $table->timestamps();
         });
     }

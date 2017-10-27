@@ -16,7 +16,9 @@ class CreateProductPizzaTable extends Migration
         Schema::create('product_pizza', function (Blueprint $table) {
             $table->increments('product_pizza_id');
             $table->integer('pizza_id')->unsigned();
+            // $table->foreign('pizza_id')->references('pizza_id')->on('pizzas');
             $table->integer('product_id')->unsigned();
+            // $table->foreign('product_id')->references('product_id')->on('products');
             $table->timestamps();
         });
     }

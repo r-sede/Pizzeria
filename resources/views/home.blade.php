@@ -21,7 +21,7 @@
         @endif
         @if($error_message)
             <div class="alert alert-danger">
-                {{$error_message}}
+                <?= $error_message ?>
             </div>
         @endif
             <form method="post" id='pizza' action="/makeOrder">
@@ -39,23 +39,23 @@
                         @if($pizza['status'])
                         <tr>
                             <td>
-                                {{$pizza['name']}}
+                                <?= $pizza['name'] ?>
                             </td>
                             <td>
                                 @foreach($pizza['compose'] as $value)
-                                        {{ $value->name }},
+                                        <?= $value->name ?>,
                                 @endforeach
                             </td>
                             <td>
                                 <input name="l_{{$pizza['pizza_id']}}" type="checkbox" id="l_{{$pizza['pizza_id']}}" />
                                 <label for="l_{{$pizza['pizza_id']}}">
-                                    {{ $pizza['price_little']/100 }} €
+                                    <?= $pizza['price_little']/100 ?> €
                                 </label>
                             </td>
                             <td>
                                 <input name="b_{{$pizza['pizza_id']}}" type="checkbox" id="b_{{$pizza['pizza_id']}}" />
                                 <label for="b_{{$pizza['pizza_id']}}">
-                                    {{ $pizza['price_big']/100 }} €
+                                    <?= $pizza['price_big']/100 ?> €
                                 </label>
                             </td>
                         </tr>
