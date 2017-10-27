@@ -1,8 +1,17 @@
 #Projet pizzeria
 
-## Voir CDC
+## livrables:
 
-## Lien Wireframe : 
+### mcd
 
-- [home](http://framebox.org/ADMgr)
-- [details](http://framebox.org/ADMGd)
+![model conceptuel donnés](documentConception/pizzeriaMCD.jpg)
+
+### mpd
+
+![model physique donnés](documentConception/pizzeriaMPD.jpg)
+
+
+### diagramme d etat
+
+![diagrame d etat](documentConception/diagrammeDetaPizzeria.png)
+
